@@ -1,0 +1,29 @@
+POST on the endpoint /users (create a new user)
+GET on the endpoint /users (list all users)
+GET on the endpoint /users/:userId (get a specific user)
+PATCH on the endpoint /users/:userId (update the data for a specific user)
+DELETE on the endpoint /users/:userId (remove a specific user)
+
+POST (create a resource or generally provide data)
+GET (retrieve an index of resources or an individual resource)
+PUT (create or replace a resource)
+PATCH (update/modify a resource)
+DELETE (remove a resource)
+
+Methods     	Urls	Actions
+POST        	/api/auth/signup	      signup new account
+POST     	  /api/auth/signin	      login an account
+POST	    /api/auth/signout         logout the account
+GET	    /api/test/all	          retrieve public content
+GET      	/api/test/user      	  access User’s content
+GET	    /api/test/mod	          access Moderator’s content
+GET	    /api/test/admin     	  access Admin’s content
+
+
+Routes	HTTP Methods	Description
+/login	       GET   	     Displays all tea
+/register     	POST       	Creates a new tea
+/logout	      DELETE	   Deletes all tea
+/user/:id	   GET	      Displays a specific tea, given its name
+/update/:id	   POST	      Adds a comment to a specific tea, given its name
+/delete/:id	   DELETE	   Deletes a specific tea, given its name

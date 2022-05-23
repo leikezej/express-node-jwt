@@ -1,0 +1,36 @@
+{
+  "name": "node-jwt",
+  "version": "0.0.0",
+  "author": "jepzekiel",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+    },
+  "keywords": [
+    "jwt",
+    "node",
+    "authentication"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leikezej/express-node-jwt.git"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "keyv": "^4.2.9",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
