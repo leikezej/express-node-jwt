@@ -34,7 +34,7 @@ exports.register = async (req, res) => {
          .send({
             message: "User Registered successfully"
           })
-      };
+};
 
 exports.login = async (req, res) => {
     const user = await User.findOne({
@@ -91,9 +91,11 @@ exports.login = async (req, res) => {
     return res.status(401).json({ error: 'Unauthorized' });
 }
 
-exports.getUser = async (req, res) => {
-    const user = await User.findByPk(req.user.id);
-    return res.json(user);
+exports.users = async (req, res) => {
+   //  const user = await User.findByPk(req.user.id);
+   const user = await User.findById(req.params.userId).then((result) => {
+      res.status(200).send(result);
+   });
 }
 
 exports.logout = async (req, res) => { 

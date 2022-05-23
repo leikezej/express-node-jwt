@@ -2,10 +2,12 @@
   "name": "node-jwt",
   "version": "0.0.0",
   "author": "jepzekiel",
-  "private": true,
+  "private": "false",
+  
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "test": "npm run test + Error"
     },
   "keywords": [
     "jwt",
